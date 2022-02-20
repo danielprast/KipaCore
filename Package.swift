@@ -9,8 +9,13 @@ let package = Package(
               .macOS(.v10_12)],
   products: [
     .library(
-      name: "CoreNetworking",
-      targets: ["CoreNetworking"]),
+      name: "KipaCore",
+      targets: [
+        "CoreNetworking",
+        "Shouter",
+        "DependencyInjection"
+      ]
+    ),
   ],
   dependencies: [],
   targets: [
