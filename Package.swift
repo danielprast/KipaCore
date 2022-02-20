@@ -19,6 +19,7 @@ let package = Package(
       dependencies: ["Shouter"]
     ),
     .target(name: "Shouter"),
+    .target(name: "DependencyInjection"),
     .testTarget(
       name: "CoreNetworkingTests",
       dependencies: ["CoreNetworking", "Shouter"],
